@@ -3,9 +3,9 @@ import random
 import smtplib
 
 now = dt.datetime.now()
-my_email = "adiez.biotech@gmail.com"
-to_email = "alberto.d.sanchez@ntnu.no"
-app_password = "sghs klth krtj dued"
+my_email = "FROM_EMAIL_GMAIL"
+to_email = "TO_EMAIL"
+app_password = "YOUR_APP_PASS_HERE"
 
 if now.weekday() == 0:
     with open("./quotes.txt") as file:
