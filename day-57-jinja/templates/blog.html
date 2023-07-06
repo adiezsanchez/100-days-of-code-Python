@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Blog</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/static/css/styles.css" /> 
+	</head>
+	<body>
+		<!-- Anything between 2x curly gets evaluated as Python code -->
+        <!-- For multiline statements use % -->
+        {% for blog_post in posts: %}
+            {% if blog_post["id"] == 2 %}
+                <h1>{{ blog_post["title"] }}</h1>
+                <h2>{{ blog_post["subtitle"] }}</h2>
+            {% else %}
+                <h2>{{ blog_post["subtitle"] }}</h2>
+            {% endif %}
+        {% endfor %}
+	</body>
+	<footer>
+		<p>© 2023 Untitled. All rights reserved. Design: Alberto Diez </p>
+	</footer>
+</html>

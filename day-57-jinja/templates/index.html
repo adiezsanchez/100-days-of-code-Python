@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Test</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--<link rel="stylesheet" href="static/assets/css/main.css" /> -->
+	</head>
+	<body>
+		<!-- Anything between 2x curly gets evaluated as Python code -->
+		<h1>Hello World!</h1> 
+		<h2>{{5 * 6}}</h2>
+		<h3>Random number: {{num}}</h3> <!-- Refer to the num variable inside server.py -->
+		<a href="{{ url_for('get_blog', num=3) }}">Go to blog!</a>
+	</body>
+	<footer>
+		<p>© {{date}} Untitled. All rights reserved. Design: Alberto Diez </p>
+	</footer>
+</html>
+
