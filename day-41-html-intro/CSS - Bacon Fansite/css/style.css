@@ -1,0 +1,43 @@
+/*********** TAG SELECTORS ************/
+
+body {
+    background-color: #BBDED6;
+}
+
+hr {
+    border-color: grey;
+    border-width: 10px;
+    border-style:dotted none none none;
+    width:10%;
+}
+
+h1 {
+    color: #61C0BF;
+}
+
+
+img {
+    background-color: yellow;
+}
+
+img:hover {
+    background-color: yellow;
+}
+
+
+/*********** CLASS SELECTOR (group related elements that are going to behave similarly) ************/
+.bacon {
+    background-color:red;
+}
+.broccoli {
+    background-color:green;
+}
+
+.circular {
+    border-radius:100%;
+}
+
+/*********** ID SELECTOR (only a single element in the website) ************/
+#heading {
+    color: blue;
+}
